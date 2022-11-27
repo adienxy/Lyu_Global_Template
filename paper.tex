@@ -1,0 +1,37 @@
+\documentclass[a4paper,cs4size,UTF8,unixfonts,AutoFakeBold,scheme=chinese,openany]{ctexbook}
+
+\usepackage{lyu_thesis}
+\usepackage{float}
+
+\begin{document}
+% page
+\pagestyle{empty}
+%\maketitle
+
+\begin{center}
+	
+	\sonti{\zihao{2}Title}
+	\vskip 5mm
+	\songti\zihao{-4}Author
+\end{center}
+\vskip 5mm
+\makeabstract{paper/abstract.tex} % 摘要
+
+%\cleardoublepage
+%\tableofcontents
+
+\clearpage
+% 页码数字编号
+\pagenumbering{arabic}
+% 页码重新编号
+\setcounter{page}{1}
+
+% \setlength{\voffset}{-15mm}
+%\input{paper/formula.tex}
+
+\input{paper/mine.tex}
+
+\input{paper/ref.tex} % 参考文献
+
+
+\end{document}
